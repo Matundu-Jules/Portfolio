@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Projet - Ajout des Projets dans le CV.</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">Moi</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#education">Éducation</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#recommandations">Recommandations</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="about" class="container-fluid">
+      <div class="col-xs-8 col-md-4 profile-picture">
+        <img src="img/me2.JPG" alt="Jules." class="img-circle" />
+      </div>
+      <div class="heading">
+        <h1>Matundu Jules-Langa</h1>
+        <h3>Développeur Web - Animateur polyvalent</h3>
+        <a href="docs/CV_Jules-Langa_Matundu.pdf" class="button1"
+          >Télécharger cv</a
+        >
+      </div>
+    </section>
+    <section id="skills">
+      <div class="green-divider"></div>
+      <div class="heading">
+        <h2>Compétences</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 85%"
+              >
+                <h5>HTML 75%</h5>
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                <h5>CSS 50%</h5>
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                <h5>JAVASCRIPT 50%</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                <h5>JQUERY 50%</h5>
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                <h5>BOOTSTRAP 50%</h5>
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              >
+                <h5>GIT 70%</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="white-divider"></div>
+        <div class="heading">
+          <h2>Expérience Professionnelle</h2>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge">
+              <span class="glyphicon glyphicon-briefcase"></span>
+            </div>
+            <div class="timeline-panel-container">
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Centre de loisirs "Belle couleurs"</h3>
+                  <h4>Agent d'animation contractuel</h4>
+                  <p class="text-muted">
+                    <small class="glyphicon glyphicon-time"></small> D'octobre
+                    2016 à janvier 2021
+                  </p>
+                </div>
+                <div class="timeline-body">
+                  <p>Assurer la sécurité des enfants.</p>
+                  <p>Règles d'hygiène et de sécurité.</p>
+                  <p>Psychologie de l'enfant.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+              <span class="glyphicon glyphicon-briefcase"></span>
+            </div>
+            <div class="timeline-panel-container-inverted">
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>
+                    Siblu Villages<br />
+                    Les Viviers - Le Domaine De Soulac
+                  </h3>
+                  <h4>Animateur Polyvalent</h4>
+                  <p class="text-muted">
+                    <small class="glyphicon glyphicon-time"></small> De juillet
+                    2020 à octobre 2020
+                  </p>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    Informer les parents sur l'organisation de la structure et
+                    présenter le programme des activités aux enfants. -Mettre en
+                    place des espaces
+                  </p>
+                  <p>
+                    Concevoir des supports d'information et de communication.
+                  </p>
+                  <p>
+                    Mettre en place des espaces d'animation selon des thèmes ou
+                    des événements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+              <span class="glyphicon glyphicon-briefcase"></span>
+            </div>
+            <div class="timeline-panel-container">
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Siblu Villages - Le Lac Des Rêves</h3>
+                  <h4>
+                    Contrat de Professionnalisation<br />Animateur Mini-Club
+                  </h4>
+                  <p class="text-muted">
+                    <small class="glyphicon glyphicon-time"></small> De février
+                    2019 à septembre 2019
+                  </p>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    Concevoir ou participer à l'élaboration de programmes
+                    d'animation.
+                  </p>
+                  <p>
+                    Micro / Soirée enfants / Mascotte / Soirée adultes (Bingo,
+                    Quiz, Tiercé Dansant...).
+                  </p>
+                  <p>
+                    Chorégraphie / Talent show / Spectacle / Sketchs / Création
+                    spectacle enfants.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="green-divider"></div>
+        <div class="heading">
+          <h2>Education</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="education-block">
+              <h5>2020-2021</h5>
+              <span class="glyphicon glyphicon-education"></span>
+              <h3>Udemy - OpenClass Room</h3>
+              <h4>Formation Développeur Web</h4>
+              <div class="white-divider"></div>
+              <p>HTML/CSS, JavaScript, Git</p>
+              <p>jQuery, Bootstrap</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="education-block">
+              <h5>2019</h5>
+              <span class="glyphicon glyphicon-education"></span>
+              <h3>The Village - École d'Animation</h3>
+              <h4>Formation Animateur mini-club / polyvalent</h4>
+              <div class="white-divider"></div>
+              <p>Micro, Chorégraphie</p>
+              <p>Développement Personnel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="white-divider"></div>
+        <div class="heading">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a
+              href="projets/Jeux - Snake/index.html"
+              target="_blank"
+              class="thumbnail"
+            >
+              <img src="img/snake.PNG" alt="Jeu du Serpent" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a
+              href="projets/Projet_Top5MeilleuresActrices/index.html"
+              target="_blank"
+              class="thumbnail"
+            >
+              <img
+                src="img/top5actrices.png"
+                alt="Top 5 des Meilleures Actrices"
+              />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="http://www.twitter.com" target="_blank" class="thumbnail">
+              <img src="img/twitter_video.png" alt="Twitter Video" />
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="http://www.youtube.com" target="_blank" class="thumbnail">
+              <img src="img/youtube.png" alt="Youtube" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="http://www.twitter.com" target="_blank" class="thumbnail">
+              <img src="img/twitter_retweet.png" alt="Twitter Retweet" />
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="http://www.facebook.com" target="_blank" class="thumbnail">
+              <img src="img/facebook_video.png" alt="Facebook Video" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recommandations">
+      <div class="container">
+        <div class="green-divider"></div>
+        <div class="heading">
+          <h2>Recommandations</h2>
+        </div>
+
+        <div
+          id="myCarousel"
+          class="carousel slide text-center"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner text-center" role="listbox">
+            <div class="item active">
+              <h3>
+                "J’ai adoré mon séjour au camping ! J’ai aimé aller au club Ados
+                avec l’animateur Jules qui est super sympa et cool !..."
+              </h3>
+              <h4>
+                <a
+                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r767523505-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
+                  >Norah</a
+                >
+              </h4>
+            </div>
+            <div class="item">
+              <h3>
+                "Jules ( le responsable du club ado ) est super c'est le best
+                👍👍👍"
+              </h3>
+              <h4>
+                <a
+                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r767470857-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
+                  >Mako</a
+                >
+              </h4>
+            </div>
+            <div class="item">
+              <h3>
+                "Il y a aussi un Club Ados avec des activités très amusantes
+                comme le Troc Patate où il faut aller rencontrer des gens et
+                troquer des objets contre de la nourriture pour se faire un
+                goûter dans l'après-midi, vous serez accompagné de Jules, un
+                super animateur qui des fois est aussi un enfant..."
+              </h3>
+              <h4>
+                <a
+                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r766116182-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
+                  >Sateen</a
+                >
+              </h4>
+            </div>
+          </div>
+          <a
+            class="left carousel-control"
+            href="#myCarousel"
+            data-slide="prev"
+            role="button"
+            ><span class="glyphicon glyphicon-chevron-left"></span
+          ></a>
+          <a
+            class="right carousel-control"
+            href="#myCarousel"
+            data-slide="next"
+            role="button"
+            ><span class="glyphicon glyphicon-chevron-right"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <a href="#about"><span class="glyphicon glyphicon-chevron-up"></span></a>
+      <h5>© 2021 MATUNDU Jules-Langa</h5>
+    </footer>
+  </body>
+</html>
