@@ -3,23 +3,23 @@ $(function () {
   $("#about").animate({ opacity: 1.0 }, 2000);
 
   //Animation lorsque l'on passe la souris sur un btn de l'accueil:
-  $("#sectionAnim").hover(
+  $(".btnAccueilAnim").hover(
     function () {
       // over
-      $("img").fadeOut(1);
-      $("img").attr("src", "img/me3.jpg");
-      $("img").fadeIn(1000);
+      $(".imgCircleAccueil").fadeOut(1);
+      $(".imgCircleAccueil").attr("src", "img/me3.jpg");
+      $(".imgCircleAccueil").fadeIn(1000);
     },
     function () {
       // out
     }
   );
-  $("#sectionDev").hover(
+  $(".btnAccueilDev").hover(
     function () {
       // over
-      $("img").fadeOut(1);
-      $("img").attr("src", "img/me2.jpg");
-      $("img").fadeIn(1000);
+      $(".imgCircleAccueil").fadeOut(1);
+      $(".imgCircleAccueil").attr("src", "img/me2.jpg");
+      $(".imgCircleAccueil").fadeIn(1000);
     },
     function () {
       // out
