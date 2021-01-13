@@ -28,7 +28,7 @@ $(function () {
   // Variables :
   let imgCircle;
   let imgCircleAnim = $(".imgCircleAccueil").attr("src", "img/me3.jpg");
-  let imgCircleDev = $(".imgCircleAccueil").attr("src", "img/me2.jpg");
+  let imgCircleDev = $(".imgCircleAccueil").attr("src", "img/me2.JPG");
 
   //Animation changement photo lorsque l'on passe la souris sur un btn de l'accueil:
   function animationImgAnim() {
