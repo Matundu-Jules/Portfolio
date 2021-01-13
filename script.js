@@ -39,7 +39,7 @@ $(function () {
   }
   function animationImgDev() {
     imgCircle.fadeOut(0);
-    $(".imgCircleAccueil").attr("src", "img/me2.jpg");
+    $(".imgCircleAccueil").attr("src", "img/me2.JPG");
     imgCircle.fadeIn(1000);
     imgCircle = imgCircleDev;
   }
