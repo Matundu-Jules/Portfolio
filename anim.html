@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <link
       href="http://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
@@ -16,49 +16,89 @@
     />
     <link rel="stylesheet" href="styleAnim.css" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="plugins/Animsition/animsition.min.css" />
+    <script src="plugins/Animsition/animsition.min.js"></script>
     <title>CV Animation - Matundu Jules</title>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="60">
-    <nav class="navbar navbar-default navbar-fixed-top startHide">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+  <body
+    class="animsition"
+    data-animsition-in-class="fade-in-right"
+    data-animsition-in-duration="1000"
+    data-animsition-out-class="fade-out-right"
+    data-animsition-out-duration="800"
+  >
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active item">
+          <img src="img/banniereCV1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
+            <div class="slider-btn">
+              <button class="btn btn-1">Télécharger mon CV</button>
+              <button class="btn btn-2">Je sais pas</button>
+            </div>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">Moi</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#experience">Expérience</a></li>
-            <li><a href="#education">Éducation</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#recommandations">Recommandations</a></li>
-          </ul>
+        <div class="carousel-item item">
+          <img src="img/banniereCV2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="slider-btn">
+              <button class="btn btn-1">Télécharger mon CV</button>
+              <button class="btn btn-2">Je sais pas</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item item">
+          <img src="img/banniereCV3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo magna, vel scelerisque nisl consectetur.</p>
+
+            <div class="slider-btn">
+              <button class="btn btn-1">Télécharger mon CV</button>
+              <button class="btn btn-2">Je sais pas</button>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <section id="about" class="container-fluid">
-      <div class="col-xs-8 col-md-4 profile-picture">
-        <img src="img/me3.JPG" alt="Jules." class="img-circle" />
-      </div>
-      <div class="heading">
-        <h1>Matundu Jules-Langa</h1>
-        <h3>
-          <a href="anim.html" id="sectionAnim">Animateur polyvalent</a>
-        </h3>
-        <a href="docs/CV_Jules-Langa_Matundu.pdf" class="button1"
-          >Télécharger cv</a
-        >
-      </div>
-    </section>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
     <section id="skills" class="startHide">
       <div class="green-divider"></div>
       <div class="heading">
@@ -340,73 +380,7 @@
         <div class="green-divider"></div>
         <div class="heading">
           <h2>Recommandations</h2>
-        </div>
-
-        <div
-          id="myCarousel"
-          class="carousel slide text-center"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner text-center" role="listbox">
-            <div class="item active">
-              <h3>
-                "J’ai adoré mon séjour au camping ! J’ai aimé aller au club Ados
-                avec l’animateur Jules qui est super sympa et cool !..."
-              </h3>
-              <h4>
-                <a
-                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r767523505-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
-                  >Norah</a
-                >
-              </h4>
-            </div>
-            <div class="item">
-              <h3>
-                "Jules ( le responsable du club ado ) est super c'est le best
-                👍👍👍"
-              </h3>
-              <h4>
-                <a
-                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r767470857-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
-                  >Mako</a
-                >
-              </h4>
-            </div>
-            <div class="item">
-              <h3>
-                "Il y a aussi un Club Ados avec des activités très amusantes
-                comme le Troc Patate où il faut aller rencontrer des gens et
-                troquer des objets contre de la nourriture pour se faire un
-                goûter dans l'après-midi, vous serez accompagné de Jules, un
-                super animateur qui des fois est aussi un enfant..."
-              </h3>
-              <h4>
-                <a
-                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r766116182-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
-                  >Sateen</a
-                >
-              </h4>
-            </div>
-          </div>
-          <a
-            class="left carousel-control"
-            href="#myCarousel"
-            data-slide="prev"
-            role="button"
-            ><span class="glyphicon glyphicon-chevron-left"></span
-          ></a>
-          <a
-            class="right carousel-control"
-            href="#myCarousel"
-            data-slide="next"
-            role="button"
-            ><span class="glyphicon glyphicon-chevron-right"></span
-          ></a>
+          <h3>En cours de maintenance.</h3>
         </div>
       </div>
     </section>
