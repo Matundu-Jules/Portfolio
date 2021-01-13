@@ -26,7 +26,7 @@ $(function () {
   });
 
   // Variables :
-  let imgCircle = imgCircleDev;
+  let imgCircle = $(".imgCircleAccueil").attr("src", "img/me2.JPG");
   let imgCircleAnim = $(".imgCircleAccueil").attr("src", "img/me3.jpg");
   let imgCircleDev = $(".imgCircleAccueil").attr("src", "img/me2.JPG");
 
