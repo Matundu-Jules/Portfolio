@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link
-      href="http://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <!-- CSS -->
     <link rel="stylesheet" href="styleDev.css" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="plugins/Animsition/animsition.min.css" />
-    <script src="plugins/Animsition/animsition.min.js"></script>
+    <!-- Js -->
+    <script src="../script.js"></script>
+    <!-- Animsition -->
+    <link rel="stylesheet" href="../plugins/Animsition/animsition.min.css" />
+    <script src="../plugins/Animsition/animsition.min.js"></script>
+
     <title>CV Développeur Web - Matundu Jules</title>
   </head>
   <body
@@ -27,8 +28,6 @@
     class="animsition"
     data-animsition-in-class="fade-in-left"
     data-animsition-in-duration="1000"
-    data-animsition-out-class="fade-out-left"
-    data-animsition-out-duration="800"
   >
     <nav class="navbar navbar-default navbar-fixed-top startHide">
       <div class="container">
@@ -46,26 +45,32 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
+            <li>
+              <a
+                href="../index.html"
+                class="animsition-link"
+                data-animsition-out-class="fade-out"
+                data-animsition-out-duration="1000"
+                >Accueil</a
+              >
+            </li>
             <li><a href="#about">Moi</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#experience">Expérience</a></li>
             <li><a href="#education">Éducation</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#recommandations">Recommandations</a></li>
+            <li><a href="#citations">Citations</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <section id="about" class="container-fluid">
       <div class="col-xs-8 col-md-4 profile-picture">
-        <img src="img/me2.JPG" alt="Jules." class="img-circle" />
+        <img src="../img/me2.JPG" alt="Jules." class="img-circle" />
       </div>
       <div class="heading">
-        <h1>Matundu Jules-Langa</h1>
-        <h3>
-          <a href="dev.html" id="sectionDev">Développeur Web</a> -
-          <a href="anim.html" id="sectionAnim">Animateur polyvalent</a>
-        </h3>
+        <h1>Matundu<br />Jules-Langa</h1>
+        <h3>Développeur Web</h3>
         <a href="docs/CV_Jules-Langa_Matundu.pdf" class="button1"
           >Télécharger cv</a
         >
@@ -115,6 +120,18 @@
                 <h5>JAVASCRIPT 50%</h5>
               </div>
             </div>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 30%"
+              >
+                <h5>MYSQL 30%</h5>
+              </div>
+            </div>
           </div>
           <div class="col-md-6">
             <div class="progress">
@@ -151,6 +168,18 @@
                 style="width: 70%"
               >
                 <h5>GIT 70%</h5>
+              </div>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 20%"
+              >
+                <h5>PHP 20%</h5>
               </div>
             </div>
           </div>
@@ -207,8 +236,7 @@
                 <div class="timeline-body">
                   <p>
                     Informer les parents sur l'organisation de la structure et
-                    présenter le programme des activités aux enfants. -Mettre en
-                    place des espaces
+                    présenter le programme des activités aux enfants.
                   </p>
                   <p>
                     Concevoir des supports d'information et de communication.
@@ -270,10 +298,10 @@
               <h5>2020-2021</h5>
               <span class="glyphicon glyphicon-education"></span>
               <h3>Udemy - OpenClass Room</h3>
-              <h4>Formation Développeur Web</h4>
+              <h4>Formation en ligne - Développeur Web</h4>
               <div class="white-divider"></div>
               <p>HTML/CSS, JavaScript, Git</p>
-              <p>jQuery, Bootstrap</p>
+              <p>jQuery, Bootstrap, PHP, MYSQL</p>
             </div>
           </div>
           <div class="col-sm-6">
@@ -299,7 +327,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <a
               href="projets/Jeux-Snake/index.html"
               target="_blank"
@@ -308,7 +336,7 @@
               <img src="img/snake.PNG" alt="Jeu du Serpent" />
             </a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <a
               href="projets/Projet_Top5MeilleuresActrices/index.html"
               target="_blank"
@@ -320,38 +348,36 @@
               />
             </a>
           </div>
-          <div class="col-sm-4">
-            <a href="http://www.twitter.com" target="_blank" class="thumbnail">
-              <img src="img/twitter_video.png" alt="Twitter Video" />
-            </a>
-          </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4">
-            <a href="http://www.youtube.com" target="_blank" class="thumbnail">
-              <img src="img/youtube.png" alt="Youtube" />
+          <div class="col-sm-6">
+            <a
+              href="projets/GenerateurCitation/index.html"
+              target="_blank"
+              class="thumbnail"
+            >
+              <img src="img/generateurcitation.png" alt="Youtube" />
             </a>
           </div>
-          <div class="col-sm-4">
-            <a href="http://www.twitter.com" target="_blank" class="thumbnail">
-              <img src="img/twitter_retweet.png" alt="Twitter Retweet" />
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="http://www.facebook.com" target="_blank" class="thumbnail">
-              <img src="img/facebook_video.png" alt="Facebook Video" />
+          <div class="col-sm-6">
+            <a
+              href="projets/Jeux - Juste Prix/index.html"
+              target="_blank"
+              class="thumbnail"
+            >
+              <img src="img/justeprix.png" alt="Twitter Retweet" />
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="recommandations" class="startHide">
+    <section id="citations" class="startHide">
       <div class="container">
         <div class="green-divider"></div>
         <div class="heading">
-          <h2>Recommandations</h2>
+          <h2>Citations</h2>
         </div>
 
         <div
@@ -367,42 +393,22 @@
           <div class="carousel-inner text-center" role="listbox">
             <div class="item active">
               <h3>
-                "J’ai adoré mon séjour au camping ! J’ai aimé aller au club Ados
-                avec l’animateur Jules qui est super sympa et cool !..."
+                "Tout ce qu'on m'a enseigné, toutes les sciences humaines que
+                j'ai étudiées et approfondies, toutes les recherches enfin que
+                j'ai faites sur le principe et l'essence des choses, ne m'ont
+                servi qu'à savoir que je ne sais rien."
               </h3>
-              <h4>
-                <a
-                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r767523505-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
-                  >Norah</a
-                >
-              </h4>
+              <h4>Socrate</h4>
+            </div>
+            <div class="item">
+              <h3>"La victoire sur soi est la plus grande des victoires."</h3>
+              <h4>Platon</h4>
             </div>
             <div class="item">
               <h3>
-                "Jules ( le responsable du club ado ) est super c'est le best
-                👍👍👍"
+                "Il n’y a pas une méthode unique pour étudier les choses."
               </h3>
-              <h4>
-                <a
-                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r767470857-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
-                  >Mako</a
-                >
-              </h4>
-            </div>
-            <div class="item">
-              <h3>
-                "Il y a aussi un Club Ados avec des activités très amusantes
-                comme le Troc Patate où il faut aller rencontrer des gens et
-                troquer des objets contre de la nourriture pour se faire un
-                goûter dans l'après-midi, vous serez accompagné de Jules, un
-                super animateur qui des fois est aussi un enfant..."
-              </h3>
-              <h4>
-                <a
-                  href="https://www.tripadvisor.fr/ShowUserReviews-g776256-d2297162-r766116182-Siblu_Villages_Les_Viviers-Lege_Cap_Ferret_Gironde_Nouvelle_Aquitaine.html?m=19905"
-                  >Sateen</a
-                >
-              </h4>
+              <h4>Aristote</h4>
             </div>
           </div>
           <a

@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <title>Welcome !</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      href="http://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Animsition -->
     <link rel="stylesheet" href="plugins/Animsition/animsition.min.css" />
     <script src="plugins/Animsition/animsition.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Js -->
     <script src="script.js"></script>
-    <title>Welcome !</title>
   </head>
   <body
     class="animsition"
     data-animsition-in-class="fade-in"
     data-animsition-in-duration="1000"
-    data-animsition-out-class="fade-out"
-    data-animsition-out-duration="800"
   >
     <section id="about" class="container-fluid">
       <div class="col-sm-8 col-md-8 col-lg-6 col-xl-4 profile-picture">
         <img
           src="img/me2.JPG"
           alt="Jules."
-          class="rounded-circle shadow imgCircleAccueil"
+          class="rounded-circle imgCircleAccueil"
         />
       </div>
       <div class="heading">
@@ -42,25 +40,26 @@
         </h1>
 
         <div class="row choiceCategorie">
-          <div class="col-sm-12 col-md-6 col-lg-6" class="shadowCategorie">
+          <div class="col-sm-12 col-md-6 col-lg-6">
             <h3>
               <a
-                href="dev.html"
+                href="SiteDev/dev.html"
                 id="sectionDev"
-                class="shadow btnAccueilDev animsition-link"
+                class="btnAccueilDev animsition-link"
+                data-animsition-out-class="fade-out-right"
+                data-animsition-out-duration="1000"
                 >Développeur Web</a
               >
             </h3>
           </div>
-          <div
-            class="col-sm-12 col-md-6 col-lg-6"
-            class="shadowCategorie btnAccueil"
-          >
+          <div class="col-sm-12 col-md-6 col-lg-6" class="btnAccueil">
             <h3>
               <a
-                href="anim.html"
+                href="SiteAnim/anim.html"
                 id="sectionAnim"
-                class="shadow btnAccueilAnim animsition-link"
+                class="btnAccueilAnim animsition-link"
+                data-animsition-out-class="fade-out-left"
+                data-animsition-out-duration="1000"
                 >Animateur</a
               >
             </h3>

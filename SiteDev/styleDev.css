@@ -1,3 +1,10 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* ANIMATION */
+.animsition {
+  background: #2a9d8f;
+}
 /* GENERAL */
 
 body {
@@ -125,12 +132,6 @@ section .heading h2 {
   background: #eff7ff;
   color: #2a9d8f;
   text-decoration: none;
-}
-
-#sectionDev,
-#sectionAnim {
-  text-decoration: none;
-  color: #010400;
 }
 
 /* COMPETENCES SKILLS */
@@ -341,13 +342,16 @@ section .heading h2 {
   -webkit-filter: none;
 }
 
-/* RECOMMANDATIONS */
+/* CITATIONS */
 
-#recommandations {
+#citations .heading {
+  padding-bottom: 0;
+}
+#citations {
   background: #eff7ff;
 }
 
-#recommandations .heading h2 {
+#citations .heading h2 {
   color: #2a9d8f;
 }
 
