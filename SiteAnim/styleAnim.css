@@ -65,16 +65,22 @@ ol {
 }
 
 .slider-btn .btn {
-  background-color: #2a9d8f;
+  font-weight: bold;
+  font-size: 1vw;
+  text-transform: uppercase;
   color: #eff7ff;
-  border-radius: 2px;
+  background: #2a9d8f;
+  border: 0.1vw solid #eff7ff;
+  margin-top: 1em;
   padding: 0.5em 1em;
-  font-size: 1.3vw;
-  text-shadow: 1px 1px 2px black;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
 }
+
 .slider-btn .btn:hover {
-  background-color: #eff7ff;
+  background: #eff7ff;
   color: #2a9d8f;
+  text-decoration: none;
 }
 
 /* FOOTER */
