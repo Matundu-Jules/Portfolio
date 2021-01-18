@@ -280,7 +280,8 @@ section .heading h2 {
 }
 
 .education-block {
-  width: 80%;
+  width: 90%;
+  height: 50vh;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
