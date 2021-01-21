@@ -131,7 +131,9 @@
             </p>
 
             <div class="slider-btn">
-              <a href="docs/CV_Jules-Langa_Matundu.pdf" class="btn btn-1"
+              <a
+                href="../SiteDev/docs/CV_Jules-Langa_Matundu.pdf"
+                class="btn btn-1"
                 >Télécharger mon CV</a
               >
             </div>
@@ -224,5 +226,62 @@
         </div>
       </div>
     </section>
+    <!-- SECTION FORMULAIRE + CONTACT -->
+    <section id="formContact">
+      <div class="container">
+        <div class="green-divider"></div>
+        <div class="heading">
+          <h2>Des idées ou des questions ?!</h2>
+        </div>
+        <div class="green-divider"></div>
+
+        <h3>Contactez moi</h3>
+        <div class="green-divider"></div>
+
+        <form id="formulaire">
+          <div class="mb-4">
+            <label for="formSujet" class="form-label">Sujet :</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="formSujet"
+            >
+              <option selected>Idées d'activités et de jeux</option>
+              <option value="1">Idées pour le site web</option>
+              <option value="2">Questions</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="formEmail" class="form-label">Adresse e-mail :</label>
+            <input
+              type="email"
+              class="form-control"
+              id="formEmail"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="formNom" class="form-label">Nom :</label>
+            <input type="text" class="form-control" id="formNom" />
+          </div>
+          <div class="mb-4">
+            <label for="formPrenom" class="form-label">Prénom :</label>
+            <input type="text" class="form-control" id="formPrenom" />
+          </div>
+
+          <div class="mb-4">
+            <label for="formMessage" class="form-label">Message :</label>
+            <textarea class="form-control" id="formMessage" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <a href="#carouselExampleCaptions"><i class="bi bi-chevron-up"></i></a>
+      <h5>© 2021 MATUNDU Jules-Langa</h5>
+    </footer>
   </body>
 </html>

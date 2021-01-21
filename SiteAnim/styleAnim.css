@@ -32,6 +32,7 @@ ol {
   height: 2px;
   background: #2a9d8f;
   margin: 0 auto;
+  box-shadow: 0px 0px 3px black;
 }
 
 .white-divider {
@@ -141,40 +142,33 @@ ol {
   text-decoration: none;
 }
 
-/* SECTION PRESENTATION */
+/* --- SECTION PRESENTATION --- */
 #presentation {
   background: #2a9d8f;
   color: #eff7ff;
   text-align: center;
-}
-
-#presentation .white-divider {
-  margin: 50px auto;
+  padding: 50px 0px;
 }
 
 #presentation .heading {
   color: #eff7ff;
   text-shadow: 0px 0px 5px black;
-  text-decoration: none;
   text-transform: uppercase;
+  margin: 50px auto;
 }
 
 .presentation-block {
-  /*  border: 1px solid #eff7ff; */
-  margin-bottom: 50px;
+  margin: 50px auto;
   width: 100%;
   text-align: center;
-}
-.presentation-block .white-divider {
-  margin: 10px auto 30px auto !important;
 }
 
 .presentation-block h3 {
   margin-bottom: 15px;
-
   text-shadow: 0px 0px 5px black;
   text-transform: uppercase;
 }
+
 .presentation-block p {
   margin-top: 15px;
   text-shadow: 1px 1px 2px black;
@@ -185,25 +179,99 @@ ol {
   text-shadow: 0px 0px 5px black;
 }
 
-/* FOOTER */
+/* --- SECTION FORMULAIRE + CONTACT --- */
+#formContact {
+  background: #eff7ff;
+  color: #2a9d8f;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#formContact .heading {
+  color: #2a9d8f;
+  text-shadow: 0px 0px 2px black;
+  text-transform: uppercase;
+  margin: 50px auto;
+}
+
+#formContact h3 {
+  margin: 50px auto;
+  text-shadow: 0px 0px 1px black;
+  text-transform: uppercase;
+}
+
+#formulaire {
+  width: 50%;
+  margin: 80px auto 0 auto;
+}
+
+.form-control {
+  background: #fff;
+  border: 2px solid #ced4da;
+  text-align: center;
+}
+.form-control:hover {
+  border: 2px solid #2a9d8f;
+  box-shadow: 0px 0px 5px black;
+}
+.form-control:focus {
+  border: 2px solid #2a9d8f;
+  box-shadow: 0px 0px 5px black;
+}
+.form-select {
+  border: 2px solid #ced4da;
+  text-align: center;
+}
+.form-select:hover {
+  border: 2px solid #2a9d8f;
+  box-shadow: 0px 0px 5px black;
+}
+.form-select:focus {
+  border: 2px solid #2a9d8f;
+  box-shadow: 0px 0px 5px black;
+}
+.form-label {
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+.btn {
+  font-size: 1vw;
+  font-weight: bold;
+  color: #eff7ff;
+  background: #2a9d8f;
+  border: 0.2em solid #ced4da;
+  box-shadow: 0px 0px 5px black;
+  padding: 0.8em 1em;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+}
+.btn:hover {
+  background: #eff7ff;
+  border: 0.2em solid #2a9d8f;
+  color: #2a9d8f;
+  box-shadow: 0px 0px 5px black;
+}
+
+/* --- FOOTER --- */
 
 footer {
   background: #2a9d8f;
   padding: 20px 0 40px;
 }
 
-footer .glyphicon {
+footer .bi {
   font-size: 25px;
   margin: 20px;
   color: #eff7ff;
   height: 36px;
 }
 
-footer .glyphicon:hover {
+footer .bi:hover {
   font-size: 27px;
 }
 
 footer h5 {
   color: #eff7ff;
   font-weight: normal;
+  font-size: 15px;
 }
