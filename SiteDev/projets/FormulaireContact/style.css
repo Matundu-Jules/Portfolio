@@ -1,0 +1,149 @@
+/* --- FONTS --- */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Poppins&display=swap");
+
+/* --- GENERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #000001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif !important;
+  color: #f2f4f3;
+}
+
+/* --- DIVIDER --- */
+.divider {
+  width: 100px !important;
+  height: 2px !important;
+  background: #f2f4f3 !important;
+  margin: 0 auto !important;
+}
+
+/* --- HEADING --- */
+.heading {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.heading h2 {
+  font-family: "Pacifico", cursive;
+  color: #f2f4f3;
+  font-size: 70px;
+}
+
+/* --- FORMULAIRE --- */
+#contact-form {
+  font-size: 20px;
+  background: #000001;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+  color: #f2f4f3;
+}
+
+/* --- FORMULAIRE - BORDURE ARC-EN-CIEL --- */
+#contact-form::before,
+#contact-form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #00f0f0,
+    #00ff00,
+    #0000ff,
+    #ff0000,
+    #00f0f0,
+    #00ff00,
+    #0000ff,
+    #f00f0f
+  );
+  width: 100%;
+  height: 100%;
+  background-size: 500%;
+  border-radius: 20px;
+  z-index: -1;
+  transform: scale(1.02);
+  animation: animate 20s infinite;
+}
+
+#contact-form::after {
+  filter: blur(20px);
+}
+
+/* Animation Bordure arc en ciel */
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* --- .WHITE --- */
+.white {
+  color: #f7f0f5;
+}
+
+/* --- INPUT --- */
+.form-control {
+  height: 50px;
+  font-size: 18px;
+  background: #f2f4f3;
+}
+
+/* --- MESSAGE D'ERREUR .comments --- */
+.comments {
+  font-style: italic;
+  font-size: 18px;
+  color: #ed1c24;
+  height: 25px;
+}
+
+/* --- BUTTON FORM --- */
+/* --- MARGES BUTTON - L'input de type submit dans contact form --- */
+#contact-form input[type="submit"] {
+  margin: 40px auto 0px;
+  display: block;
+}
+
+.button1 {
+  border: 1px solid #f2f4f3;
+  background: #000001;
+  color: #f2f4f3;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 18px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.button1:hover {
+  background: #f2f4f3;
+  filter: blur(0.5px);
+  color: #000001;
+}
+
+/* --- MSG REMERCIEMENT FORMULAIRE --- */
+.thank-you {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #f2f4f3;
+}
